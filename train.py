@@ -122,7 +122,7 @@ def train_model(
 
     # Reduce LR on plateau
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimiser, mode="min", factor=0.5, patience=5, verbose=False
+        optimiser, mode="min", factor=0.5, patience=5
     )
 
     # ── 3. Epoch Loop ────────────────────────────────────────
